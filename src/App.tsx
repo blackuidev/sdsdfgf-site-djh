@@ -9,6 +9,9 @@ import ShoppingCart from "./components/ShoppingCart";
 import Checkout from "./components/Checkout";
 import OrderConfirmation from "./components/OrderConfirmation";
 import ProductDetails from './components/ProductDetails';
+import Home from './pages/Home';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 
 const queryClient = new QueryClient();
@@ -30,9 +33,10 @@ const App = () => (
     <div className="font-primarylw">
         <QueryClientProvider client={queryClient}>
             <BrowserRouter>
+                <Header />
                 <Layout>
                     <Routes>
-                        <Route path="/" element={<Index />} />
+                        <Route path="/" element={<Home />} />
                         <Route path="/products" element={<ProductListing />} />
                         <Route path="/products/:productId" element={<ProductDetailPage />} />
                         <Route path="/product-details/:productId" element={<ProductDetails />} />
@@ -42,6 +46,7 @@ const App = () => (
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </Layout>
+                <Footer />
             </BrowserRouter>
         </QueryClientProvider>
     </div >
