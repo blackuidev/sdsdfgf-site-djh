@@ -4,7 +4,7 @@ import Index from "./pages/Index";
 import 'react-toastify/dist/ReactToastify.css';
 import NotFound from "./pages/NotFound";
 import ProductListing from "./pages/Shoes/ProductListingPage";
-import ProductDetails from "./pages/Shoes/ProductDetails";
+import ProductDetails from "./pages/ProductDetails";
 import ShoppingCart from "./pages/ShoppingCart";
 import Checkout from "./pages/Checkout";
 import OrderConfirmation from "./pages/OrderConfirmation";
