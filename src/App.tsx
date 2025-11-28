@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import NotFound from "./pages/NotFound";
 import ProductListing from "./pages/Shoes/ProductListingPage";
 import ProductDetails from "./pages/ProductDetails";
+import ProductDetailPage from "./pages/Shoes/ProductDetailPage";
 import ShoppingCart from "./pages/ShoppingCart";
 import Checkout from "./pages/Checkout";
 import OrderConfirmation from "./pages/OrderConfirmation";
@@ -33,7 +34,7 @@ const App = () => (
                     <Routes>
                         <Route path="/" element={<Index />} />
                         <Route path="/products" element={<ProductListing />} />
-                        <Route path="/products/:productId" element={<ProductDetails />} />
+                        <Route path="/products/:productId" element={<ProductDetailPage />} />
                         <Route path="/cart" element={<ShoppingCart />} />
                         <Route path="/checkout" element={<Checkout />} />
                         <Route path="/order-confirmation" element={<OrderConfirmation />} />
