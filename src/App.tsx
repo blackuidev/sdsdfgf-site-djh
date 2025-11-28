@@ -6,7 +6,7 @@ import NotFound from "./pages/NotFound";
 import ProductListing from "./pages/Shoes/ProductListingPage";
 import ProductDetailPage from "./pages/Shoes/ProductDetailPage";
 import ShoppingCart from "./components/ShoppingCart";
-import Checkout from "./pages/Checkout";
+import Checkout from "./components/Checkout";
 import OrderConfirmation from "./pages/OrderConfirmation";
 import ProductDetails from './components/ProductDetails';
 
