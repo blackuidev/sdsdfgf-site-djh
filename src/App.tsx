@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import 'react-toastify/dist/ReactToastify.css';
 import NotFound from "./pages/NotFound";
-import ProductListing from "./pages/ProductListing";
+import ProductListing from "./pages/ProductListing/ProductListing";
 import ProductDetails from "./pages/ProductDetails";
 import ShoppingCart from "./pages/ShoppingCart";
 import Checkout from "./pages/Checkout";
