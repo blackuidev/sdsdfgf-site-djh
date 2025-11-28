@@ -1,26 +1,31 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, ShoppingCart } from 'lucide-react';
+import { ShoppingCart } from 'lucide-react';
 
-const Header: React.FC = () => {
+const Header = () => {
   return (
-    <header className="bg-white shadow-md">
-      <div className="container mx-auto py-4 px-6 flex items-center justify-between">
-        <Link to="/" className="text-2xl font-bold text-gray-800">My Store</Link>
-
-        <nav className="hidden md:flex space-x-4">
-          <Link to="/" className="text-gray-600 hover:text-gray-800">Home</Link>
-          <Link to="/products" className="text-gray-600 hover:text-gray-800">Products</Link>
-          <Link to="/cart" className="text-gray-600 hover:text-gray-800 flex items-center">
-            <ShoppingCart className="mr-1" size={20} />
-            Cart
-          </Link>
+    <header className="bg-white shadow-md py-4">
+      <div className="container mx-auto px-4 flex items-center justify-between">
+        <Link to="/" className="text-2xl font-bold text-gray-800">SDSDFGF</Link>
+        <nav>
+          <ul className="flex space-x-6">
+            <li>
+              <Link to="/" className="text-gray-600 hover:text-gray-800">Home</Link>
+            </li>
+            <li>
+              <Link to="/products" className="text-gray-600 hover:text-gray-800">Products</Link>
+            </li>
+            <li>
+              <Link to="/product-details/some-product-id" className="text-gray-600 hover:text-gray-800">Product Details (Demo)</Link>
+            </li>
+            <li>
+              <Link to="/cart" className="flex items-center text-gray-600 hover:text-gray-800">
+                <ShoppingCart className="mr-1" size={20} />
+                Cart
+              </Link>
+            </li>
+          </ul>
         </nav>
-
-        {/* Mobile Menu Button */}
-        <button className="md:hidden text-gray-600 hover:text-gray-800">
-          <Menu className="h-6 w-6" />
-        </button>
       </div>
     </header>
   );
